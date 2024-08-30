@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>index</title>
   </head>
   <body>
@@ -24,6 +24,8 @@
             src="../assets/images/banner-sm.png"
             class="img-fluid"
             alt="banner-sm"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
           />
           <div class="position-absolute bottom-0 start-50 translate-middle-x">
             <div>
@@ -45,14 +47,18 @@
             src="../assets/images/banner.png"
             class="img-fluid"
             alt="banner-lg"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
           />
 
           <div
             class="position-absolute top-50 start-0 translate-middle-y ps-5 ms-3"
           >
-            <h5 class="text-white">獻給新世代的生活風格誌</h5>
-            <h1 class="text-white">一起探索生活的無限可能</h1>
-            <button class="btn btn-accent text-space-1 fs-4">
+            <h5 class="text-white" data-aos="fade-right">獻給新世代的生活風格誌</h5>
+            <h1 class="text-white" data-aos="fade-right">一起探索生活的無限可能</h1>
+            <button class="btn btn-accent text-space-1 fs-4" 
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic">
               馬上訂閱
               <i class="bi bi-arrow-right"></i>
             </button>
@@ -63,10 +69,10 @@
     <!--主題區塊-->
     <div class="py-10">
       <section class="container">
-        <h2 class="h2 mb-4 fw-black text-space-1">熱門主題</h2>
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">熱門主題</h2>
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-1.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -86,7 +92,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-3.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -106,7 +112,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-5.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -126,7 +132,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-8.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -146,7 +152,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-2.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -166,7 +172,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-4.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -186,7 +192,7 @@
           </div>
 
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-6.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -205,7 +211,7 @@
             </article>
           </div>
           <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
-            <article class="card border-leaf">
+            <article class="card border-leaf" data-aos="flip-left">
               <img
                 src="../assets/images/theme-7.png"
                 class="card-img border-leaf d-none d-md-block d-lg-block"
@@ -230,11 +236,12 @@
     <!--精選文章-->
     <div class="py-10">
       <section class="container">
-        <h2 class="h2 mb-4 fw-black text-space-1">精選文章</h2>
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">精選文章</h2>
         <div class="row align-items-end">
           <div class="col-12 col-md-4 col-lg-4 order-1 order-md-0 order-lg-0">
             <div
               class="d-flex align-items-center justify-content-between d-md-block d-lg-block"
+              data-aos="fade-right"
             >
               <div class="page text-dark mb-0 mb-md-6 mb-lg-6"></div>
 
@@ -255,7 +262,7 @@
             </div>
           </div>
           <div class="col-12 col-md-8 col-lg-8 order-0 order-md-1 order-lg-1">
-            <div #swiperRef="" class="swiper mySwiper">
+            <div #swiperRef="" class="swiper mySwiper" data-aos="fade-left">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <article
@@ -465,10 +472,12 @@
       <section class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-6">
-            <h4 class="h4 mb-9 text-primary-dark text-center text-space-1">
+            <h4 class="h4 mb-9 text-primary-dark text-center text-space-1"
+                data-aos="fade-down-left">
               \ 母親節強檔活動 /
             </h4>
-            <h2 class="h2 mb-9 text-dark text-center fw-black text-space-1">
+            <h2 class="h2 mb-9 text-dark text-center fw-black text-space-1" 
+                data-aos="fade-down-right">
               家庭訂閱方案限時 7 折
             </h2>
             <div class="d-flex justify-content-center">
@@ -478,16 +487,17 @@
                   list-style-image: url('../assets/images/icons/ulicon.png');
                 "
               >
-                <li class="ps-2 mb-3">每月最新文章無限閱讀</li>
-                <li class="ps-2 mb-3">專屬會員限定內容</li>
-                <li class="ps-2 mb-3">定期電子報</li>
-                <li class="ps-2 mb-3">年度精選禮物</li>
-                <li class="ps-2 mb-3">24 /7 優先客戶服務</li>
-                <li class="ps-2 mb-7">為每個成員量身打造專屬行程</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">每月最新文章無限閱讀</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">專屬會員限定內容</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">定期電子報</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">年度精選禮物</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">24 /7 優先客戶服務</li>
+                <li class="ps-2 mb-7" data-aos="fade-up">為每個成員量身打造專屬行程</li>
               </ul>
             </div>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-accent mx-auto text-space-1 fs-4">
+              <button class="btn btn-accent mx-auto text-space-1 fs-4"
+                      data-aos="zoom-in-up">
                 我想了解
               </button>
             </div>
@@ -520,9 +530,11 @@
     <!--熱門文章-->
     <div class="py-10">
       <section class="container">
-        <h2 class="h2 mb-4 fw-black text-space-1">大家都在看</h2>
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">大家都在看</h2>
         <div class="row">
-          <section class="col-3 d-none d-md-none d-lg-block">
+          <section class="col-3 d-none d-md-none d-lg-block"
+                  data-aos="fade-right"
+                  data-aos-duration="500">
             <ul
               class="menu shadow mb-2 p-4 mb-2 min-vh-100 list-unstyled"
               id="v-pills-tab"
@@ -603,6 +615,8 @@
           </section>
           <section
             class="col-9 d-none d-md-none d-lg-block shadow mb-2 min-vh-100"
+            data-aos="fade-left"
+            data-aos-duration="500"
           >
             <div class="tab-content" id="v-pills-tabContent">
               <div
@@ -979,7 +993,7 @@
           </section>
 
           <section class="col-12 d-block d-md-block d-lg-none">
-            <div #swiperRef="" class="swiper mobileSwiper">
+            <div #swiperRef="" class="swiper mobileSwiper" data-aos="fade-up">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <article
@@ -1239,10 +1253,11 @@
         <div
           class="d-flex flex-wrap justify-content-start justify-content-md-between align-items-md-center mb-4"
         >
-          <h2 class="h2 fw-black text-space-1">品味生活</h2>
+          <h2 class="h2 fw-black text-space-1" data-aos="fade-down">品味生活</h2>
           <div
             class="line-life position-relative justify-content-md-between justify-content-lg-between d-none d-md-block d-lg-block"
-          >
+            data-aos="zoom-out-down"
+            >
             <button class="prepage-life btn btn-outline-gray me-5 py-1 fs-4">
               <i class="bi bi-arrow-left"></i>
             </button>
@@ -1253,7 +1268,7 @@
         </div>
         <div class="row">
           <section class="col-12">
-            <div #swiperRef="" class="swiper lifeSwiper">
+            <div #swiperRef="" class="swiper lifeSwiper" data-aos="zoom-out-left">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <article class="card mb-2 border-0" style="max-width: 416px">
@@ -1361,20 +1376,21 @@
       <section class="container">
         <div class="row">
           <section class="col-12 col-md-12 col-lg-6 align-self-center">
-            <h5 class="h5 text-gray fw-black mb-3">
+            <h5 class="h5 text-gray fw-black mb-3" data-aos="fade-down">
               今天又不知道要去哪裡了嗎？
             </h5>
-            <h2 class="h2 fw-black text-space-1 mb-9">
+            <h2 class="h2 fw-black text-space-1 mb-9" data-aos="fade-down">
               Vivre 給你意想不到的生活風格提案
             </h2>
             <button type="button"
                 class="btn btn-accent d-block text-space-1 fs-5 pt-3"
+                data-aos="flip-up"
               >
                 馬上訂閱
                 <i class="bi bi-arrow-right"></i>
               </button>
           </section>
-          <section class="col-3 d-none d-md-none d-lg-block align-self-end pt-10">
+          <section class="col-3 d-none d-md-none d-lg-block align-self-end pt-10" data-aos="fade-down">
 
             <article class="card mb-7">
               <span class="position-absolute position-absolute top-0 start-20 translate-middle 
@@ -1415,7 +1431,7 @@
             </article>
 
           </section>
-          <section class="col-3 d-none d-md-none d-lg-block align-self-start">
+          <section class="col-3 d-none d-md-none d-lg-block align-self-start" data-aos="fade-up">
             <article class="card mb-7">
               <span class="position-absolute position-absolute top-0 start-20 translate-middle 
                            badge bg-white text-accent-dark border border-accent-light rounded-0">
@@ -1455,7 +1471,7 @@
             </article>
           </section>
           <section class="col-12 d-block d-md-block d-lg-none">
-            <div #swiperRef="" class="swiper projectSwiper">
+            <div #swiperRef="" class="swiper projectSwiper" data-aos="fade-left">
               <div class="swiper-wrapper">
                 <div class="swiper-slide bg-primary">
                   <article class="card mt-3">
@@ -1549,17 +1565,20 @@
         <section class="container">
           <div class="row justify-content-center justify-content-md-between justify-content-lg-between">
             <div class="col-12 col-md-4 col-lg-4">
-              <h2 class="h2 fw-black text-space-1 text-center text-md-start text-lg-start">
+              <h2 class="h2 fw-black text-space-1 text-center text-md-start text-lg-start" 
+                  data-aos="zoom-out-left">
                 想看什麼主題由你決定！
               </h2>
             </div>
             <div class="col-12 col-md-3 col-lg-3">
-              <h4 class="h4 mb-9 text-primary-dark fw-bold text-space-1 text-center text-md-end text-lg-end">
+              <h4 class="h4 mb-9 text-primary-dark fw-bold text-space-1 text-center text-md-end text-lg-end"
+                  data-aos="zoom-out-right">
                 歡迎投稿與我們分享
               </h4>
               <button type="button"
               class="btn btn-accent d-block text-space-1 fs-9 py-3 px-4 mx-auto me-md-0 me-lg-0 ms-md-auto ms-lg-auto"
-            >
+              data-aos="zoom-out-right"
+              >
             聯絡我們
             </button>
             </div>
@@ -1571,5 +1590,30 @@
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
   </body>
 </html>
