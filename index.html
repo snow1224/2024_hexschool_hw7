@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>index</title>
+    <script type="module" crossorigin src="/2024_hexschool_hw7/assets/main-466b8b81.js"></script>
+    <link rel="stylesheet" href="/2024_hexschool_hw7/assets/main-806369ce.css">
+  </head>
+  <body>
+    <nav class="bg-primary-light d-none d-md-none d-lg-flex">
+    <div class="container">
+
+        <ul class="nav align-items-center py-3">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <img src="data:image/png;base64,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" alt="logo">
+            </a>
+          </li>
+          <li class="nav-item">
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                  <input class="form-control border rounded-end rounded-pill border-end-0 fs-6" type="search" placeholder="搜尋文章" aria-label="搜尋文章">
+                  <button class="btn btn-outline-accent border-start-0 bg-white border fs-6" type="submit">
+                      <i class="bi bi-search"></i>
+                  </button>
+              </div>
+            </form>
+          </li>
+          <li class="nav-item ms-auto me-9 mt-1">
+            <a class="nav-link active text-dark h6 fw-bold" aria-current="page" href="content.html">
+              所有文章
+            </a>
+          </li>
+          <li class="nav-item me-9 mt-1">
+            <a class="nav-link text-dark h6 fw-bold" href="#">
+              訂閱方案
+            </a>
+          </li>
+          <li class="nav-item me-9 mt-1">
+            <a class="nav-link text-dark h6 fw-bold" href="#">
+              關於我們
+            </a>
+          </li>
+          <li class="nav-item mt-1">
+            <a class="text-white btn btn-secondary h6 fw-bold" href="#">
+              登入 / 註冊
+            </a>
+          </li>
+        </ul>
+
+    </div>
+</nav>
+
+<!--手機板-->
+<nav class="navbar navbar-expand-lg bg-primary-light d-flex d-md-flex d-lg-none">
+  <div class="container-fluid py-9">
+    <a class="navbar-brand" href="index.html">
+        <img src="data:image/png;base64,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" alt="logo">
+    </a>
+    <button class="navbar-toggler border-0 radius-0" type="button"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas offcanvas-start bg-primary-light" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row align-items-center">
+      <div class="col-12 py-9">
+        <form class="d-flex" role="search">
+          <div class="input-group">
+              <input class="form-control border rounded-end rounded-pill border-end-0 fs-6 py-2 px-3" type="search" placeholder="搜尋文章" aria-label="搜尋文章">
+              <button class="btn btn-outline-accent border-start-0 bg-white border fs-4 py-2 px-3" type="submit">
+                  <i class="bi bi-search"></i>
+              </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 py-9">
+        <a class="nav-link active text-dark h6 fw-bold ps-2" aria-current="page" href="content.html">
+          所有文章
+        </a>
+      </div>
+      <div class="col-12 py-9">
+        <a class="nav-link text-dark h6 fw-bold ps-2" href="#">
+          訂閱方案
+        </a>
+      </div>
+      <div class="col-12 py-9">
+        <a class="nav-link text-dark h6 fw-bold ps-2" href="#">
+          關於我們
+        </a>
+      </div>
+      <div class="col-12 py-9">
+        <a class="text-white btn btn-secondary h6 fw-bold w-100" href="#">
+          登入 / 註冊
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--手機板-->    <header>
+      <div class="container py-10 border-top">
+        <div
+          class="position-relative d-flex d-md-flex d-lg-none justify-content-center"
+        >
+          <img
+            src="/2024_hexschool_hw7/assets/banner-sm-1a33f8cf.png"
+            class="img-fluid"
+            alt="banner-sm"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          />
+          <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <div>
+              <h5 class="text-white text-center">獻給新世代的生活風格誌</h5>
+              <h1 class="text-white text-center">一起探索生活的無限可能</h1>
+
+              <button
+                class="btn btn-accent d-block mx-auto mb-5 text-space-1 fs-4"
+              >
+                馬上訂閱
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="position-relative d-none d-md-none d-lg-block">
+          <img
+            src="/2024_hexschool_hw7/assets/banner-ff141a3d.png"
+            class="img-fluid"
+            alt="banner-lg"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          />
+
+          <div
+            class="position-absolute top-50 start-0 translate-middle-y ps-5 ms-3"
+          >
+            <h5 class="text-white" data-aos="fade-right">獻給新世代的生活風格誌</h5>
+            <h1 class="text-white" data-aos="fade-right">一起探索生活的無限可能</h1>
+            <button class="btn btn-accent text-space-1 fs-4" 
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic">
+              馬上訂閱
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--主題區塊-->
+    <div class="py-10">
+      <section class="container">
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">熱門主題</h2>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-1-c3f2428d.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-1-sm-e28ce55e.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">城市漫遊者</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-3-6a361920.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-3-sm-03d78e75.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">秘境尋蹤人</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-5-b39e8856.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-5-sm-65d802c3.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">品味設計家</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-8-ce962716.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-8-sm-402e892b.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">美食探險記</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-2-f68e2e55.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-2-sm-2123bacc.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">美學建築誌</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-4-3688ebf7.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-4-sm-0dfc8cb3.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">慢活生活行</h5>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-6-82f2b629.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-6-sm-fed41742.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">工藝匠心賞</h5>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 mb-2 mb-md-4 mb-md-lg">
+            <article class="card border-leaf" data-aos="flip-left">
+              <img
+                src="/2024_hexschool_hw7/assets/theme-7-88f0cd69.png"
+                class="card-img border-leaf d-none d-md-block d-lg-block"
+                alt="theme-lg"
+              />
+              <img
+                src="/2024_hexschool_hw7/assets/theme-7-sm-0e3e7b41.png"
+                class="card-img border-leaf d-block d-md-none d-lg-none"
+                alt="theme-sm"
+              />
+              <div
+                class="card-img-overlay d-flex align-items-center justify-content-center border-leaf mask-leaf"
+              >
+                <h5 class="card-title h5 text-white">時尚先鋒派</h5>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--主題區塊-->
+    <!--精選文章-->
+    <div class="py-10">
+      <section class="container">
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">精選文章</h2>
+        <div class="row align-items-end">
+          <div class="col-12 col-md-4 col-lg-4 order-1 order-md-0 order-lg-0">
+            <div
+              class="d-flex align-items-center justify-content-between d-md-block d-lg-block"
+              data-aos="fade-right"
+            >
+              <div class="page text-dark mb-0 mb-md-6 mb-lg-6"></div>
+
+              <div
+                class="line position-relative d-md-flex d-lg-flex justify-content-md-between justify-content-lg-between"
+              >
+                <button
+                  class="prepage btn btn-outline-gray me-5 me-md-0 me-lg-0 py-1 fs-4"
+                >
+                  <i class="bi bi-arrow-left"></i>
+                </button>
+                <button
+                  class="nextpage btn btn-outline-gray ms-5 ms-md-0 ms-lg-0 py-1 fs-4"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 col-lg-8 order-0 order-md-1 order-lg-1">
+            <div #swiperRef="" class="swiper mySwiper" data-aos="fade-left">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-ebc46e31.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-sm-203688b1.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        私人島嶼的露營奇遇記
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-2-05d8b79f.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-2-sm-30531557.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        窺探米其林三星主廚的絕密手藝
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                      </p>
+                      <div class="d-flex justify-content-between flex-wrap">
+                        <a
+                          href="#"
+                          class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                          >Read More</a
+                        >
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-6 fw-bold"
+                        >
+                          會員專屬
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-ebc46e31.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-sm-203688b1.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        私人島嶼的露營奇遇記
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-ebc46e31.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-sm-203688b1.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        私人島嶼的露營奇遇記
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-ebc46e31.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-1-sm-203688b1.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        私人島嶼的露營奇遇記
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                      </p>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                        >Read More</a
+                      >
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card rounded-0 border-0 border-bottom border-2 border-gray-dark"
+                    style="max-width: 416px"
+                  >
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-2-05d8b79f.png"
+                      class="card-img-top rounded-0 d-none d-md-none d-lg-block"
+                      alt="文章圖片1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/articles-2-sm-30531557.png"
+                      class="card-img-top rounded-0 d-block d-md-block d-lg-none"
+                      alt="文章手機板圖片1"
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title h5 fw-bold">
+                        窺探米其林三星主廚的絕密手藝
+                      </h5>
+                      <p class="card-text fs-6 fw-semibold text-gray">
+                        在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                      </p>
+                      <div class="d-flex justify-content-between flex-wrap">
+                        <a
+                          href="#"
+                          class="text-secondary fw-bold fs-5 text-decoration-none text-space-1"
+                          >Read More</a
+                        >
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-6 fw-bold"
+                        >
+                          會員專屬
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="swiper-pagination invisible"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--精選文章-->
+    <!--活動區塊-->
+    <div class="py-10 bg-primary">
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-6">
+            <h4 class="h4 mb-9 text-primary-dark text-center text-space-1"
+                data-aos="fade-down-left">
+              \ 母親節強檔活動 /
+            </h4>
+            <h2 class="h2 mb-9 text-dark text-center fw-black text-space-1" 
+                data-aos="fade-down-right">
+              家庭訂閱方案限時 7 折
+            </h2>
+            <div class="d-flex justify-content-center">
+              <ul
+                class="text-gray-400 fs-6"
+                style="
+                  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAKCAYAAABv7tTEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADvSURBVHgBjZCxzgFBEMdnlu+rPYI30ClUlCo8gtoVBBER7g6NILY4idIbnDcQjULDIyiVEp3b23G3jpwLYZrdmd3fzP8/CD+G1uwaAFQQLFaK/wJUGt2qd+gACP+uSOE3oNrSk0LS3puSIIDlfDwoM7+o1dvFT4BLtA6A459zqfl15nWxgcVtrdkxopAgOSOipA+4zjXHOT8rCAhW9y9MD4PKOIFSgFLUFnx0fLwpT1qjpwNSAEgTJB6Aoa1SIsOaDM2wguciXkE8h41HZbPHxZr0TSAMoFfj0YiFk912s0lnst4gSriOk7f49PQOugHJm2ou/BBL0wAAAABJRU5ErkJggg==');
+                "
+              >
+                <li class="ps-2 mb-3" data-aos="fade-up">每月最新文章無限閱讀</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">專屬會員限定內容</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">定期電子報</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">年度精選禮物</li>
+                <li class="ps-2 mb-3" data-aos="fade-up">24 /7 優先客戶服務</li>
+                <li class="ps-2 mb-7" data-aos="fade-up">為每個成員量身打造專屬行程</li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-accent mx-auto text-space-1 fs-4"
+                      data-aos="zoom-in-up">
+                我想了解
+              </button>
+            </div>
+          </div>
+          <div class="position-relative mb-n10">
+            <div class="position-absolute bottom-0 start-0">
+              <img
+                src="data:image/png;base64,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"
+                alt="主題背景裝飾1"
+                class="img-fluid d-none d-md-block d-lg-block"
+              />
+            </div>
+            <div class="position-absolute bottom-0 end-0">
+              <img
+                src="/2024_hexschool_hw7/assets/bg-2-6e36c816.png"
+                alt="主題背景裝飾2"
+                class="img-fluid d-none d-md-block d-lg-block"
+              />
+              <img
+                src="data:image/png;base64,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"
+                alt="主題背景手機板裝飾"
+                class="img-fluid d-block d-md-none d-lg-none"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--活動區塊-->
+    <!--熱門文章-->
+    <div class="py-10">
+      <section class="container">
+        <h2 class="h2 mb-4 fw-black text-space-1" data-aos="fade-down">大家都在看</h2>
+        <div class="row">
+          <section class="col-3 d-none d-md-none d-lg-block"
+                  data-aos="fade-right"
+                  data-aos-duration="500">
+            <ul
+              class="menu shadow mb-2 p-4 mb-2 min-vh-100 list-unstyled"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <li>
+                <a
+                  class="menu-title active"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  ria-selected="true"
+                >
+                  <i class="bi bi-dot"></i>
+                  酒精路跑地圖
+                </a>
+              </li>
+              <li>
+                <a
+                  class="menu-title"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-dot"></i>
+                  台北拉麵圖鑑
+                </a>
+              </li>
+              <li>
+                <a
+                  class="menu-title"
+                  id="v-pills-disabled-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-disabled"
+                  role="tab"
+                  aria-controls="v-pills-disabled"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-dot"></i>
+                  海島自由行
+                </a>
+              </li>
+              <li>
+                <a
+                  class="menu-title"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-dot"></i>
+                  短天數出國推薦
+                </a>
+              </li>
+              <li>
+                <a
+                  class="menu-title"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  <i class="bi bi-dot"></i>
+                  週末露營趣
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section
+            class="col-9 d-none d-md-none d-lg-block shadow mb-2 min-vh-100"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active p-7"
+                id="v-pills-home"
+                role="tabpanel"
+                aria-labelledby="v-pills-home-tab"
+                tabindex="0"
+              >
+                <article>
+                  <header class="p-4">
+                    <h5 class="h5 fw-black text-secondary mb-4 text-space-1">
+                      酒精路跑地圖
+                    </h5>
+                    <ul
+                      class="card-text text-gray-dark list-unstyled fw-bold fs-6 mb-3"
+                    >
+                      <li class="mb-9">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                      <li class="mb-9">｜你要的調酒師在這裡！五月全台酒...</li>
+                      <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                    </ul>
+                  </header>
+
+                  <div class="d-flex flex-wrap mb-3">
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-1-4140643e.png"
+                      alt="熱門文章1圖片"
+                      class="img-fluid rounded-start-7 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-2-0511cb4f.png"
+                      alt="熱門文章2圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-3-1a547610.png"
+                      alt="熱門文章3圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-4-ec19ac92.png"
+                      alt="熱門文章4圖片"
+                      class="img-fluid rounded-end-7"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between mb-3"
+                  >
+                    <div class="p-4">
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #夜貓行程
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #barhopping
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #全台酒吧
+                      </span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-9 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="tab-pane fade p-7"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+                tabindex="0"
+              >
+                <article>
+                  <header class="p-4">
+                    <h5 class="h5 fw-black text-secondary mb-4 text-space-1">
+                      台北拉麵圖鑑
+                    </h5>
+                    <ul
+                      class="card-text text-gray-dark list-unstyled fw-bold fs-6 mb-3"
+                    >
+                      <li class="mb-9">｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                      <li class="mb-9">｜你要的調酒師在這裡！五月全台酒...</li>
+                      <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                    </ul>
+                  </header>
+
+                  <div class="d-flex flex-wrap mb-3">
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-1-4140643e.png"
+                      alt="熱門文章1圖片"
+                      class="img-fluid rounded-start-7 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-2-0511cb4f.png"
+                      alt="熱門文章2圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-3-1a547610.png"
+                      alt="熱門文章3圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-4-ec19ac92.png"
+                      alt="熱門文章4圖片"
+                      class="img-fluid rounded-end-7"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between mb-3"
+                  >
+                    <div class="p-4">
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #雞白湯
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #拉麵
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #台北美食
+                      </span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-9 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="tab-pane fade p-7"
+                id="v-pills-disabled"
+                role="tabpanel"
+                aria-labelledby="v-pills-disabled-tab"
+                tabindex="0"
+              >
+                <article>
+                  <header class="p-4">
+                    <h5 class="h5 fw-black text-secondary mb-4 text-space-1">
+                      海島自由行
+                    </h5>
+                    <ul
+                      class="card-text text-gray-dark list-unstyled fw-bold fs-6 mb-3"
+                    >
+                      <li class="mb-9">｜私島慢活島嶼生活 - 在熱帶天堂品...</li>
+                      <li class="mb-9">｜海島漂流記 - 在陽光、沙灘和比基...</li>
+                      <li>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</li>
+                    </ul>
+                  </header>
+
+                  <div class="d-flex flex-wrap mb-3">
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-1-4140643e.png"
+                      alt="熱門文章1圖片"
+                      class="img-fluid rounded-start-7 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-2-0511cb4f.png"
+                      alt="熱門文章2圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-3-1a547610.png"
+                      alt="熱門文章3圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-4-ec19ac92.png"
+                      alt="熱門文章4圖片"
+                      class="img-fluid rounded-end-7"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between mb-3"
+                  >
+                    <div class="p-4">
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #熱帶國家
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #海邊
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #無敵海景
+                      </span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-9 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="tab-pane fade p-7"
+                id="v-pills-messages"
+                role="tabpanel"
+                aria-labelledby="v-pills-messages-tab"
+                tabindex="0"
+              >
+                <article>
+                  <header class="p-4">
+                    <h5 class="h5 fw-black text-secondary mb-4 text-space-1">
+                      酒精路跑地圖
+                    </h5>
+                    <ul
+                      class="card-text text-gray-dark list-unstyled fw-bold fs-6 mb-3"
+                    >
+                      <li class="mb-9">｜72小時東京遊走 - 當個時尚東京通</li>
+                      <li class="mb-9">｜48小時曼谷遊玩全攻略</li>
+                      <li>｜三天兩夜賞櫻微醺東京</li>
+                    </ul>
+                  </header>
+
+                  <div class="d-flex flex-wrap mb-3">
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-1-4140643e.png"
+                      alt="熱門文章1圖片"
+                      class="img-fluid rounded-start-7 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-2-0511cb4f.png"
+                      alt="熱門文章2圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-3-1a547610.png"
+                      alt="熱門文章3圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-4-ec19ac92.png"
+                      alt="熱門文章4圖片"
+                      class="img-fluid rounded-end-7"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between mb-3"
+                  >
+                    <div class="p-4">
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #說走就走
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #出國玩
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #東亞
+                      </span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-9 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="tab-pane fade p-7"
+                id="v-pills-settings"
+                role="tabpanel"
+                aria-labelledby="v-pills-settings-tab"
+                tabindex="0"
+              >
+                <article>
+                  <header class="p-4">
+                    <h5 class="h5 fw-black text-secondary mb-4 text-space-1">
+                      週末露營趣
+                    </h5>
+                    <ul
+                      class="card-text text-gray-dark list-unstyled fw-bold fs-6 mb-3"
+                    >
+                      <li class="mb-9">｜週末說走就走露營記</li>
+                      <li class="mb-9">｜城市野營日記</li>
+                      <li>｜和寵物去露營 - 大自然之旅的雙倍...</li>
+                    </ul>
+                  </header>
+
+                  <div class="d-flex flex-wrap mb-3">
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-1-4140643e.png"
+                      alt="熱門文章1圖片"
+                      class="img-fluid rounded-start-7 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-2-0511cb4f.png"
+                      alt="熱門文章2圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-3-1a547610.png"
+                      alt="熱門文章3圖片"
+                      class="img-fluid rounded-1 me-1"
+                    />
+                    <img
+                      src="/2024_hexschool_hw7/assets/hots-4-ec19ac92.png"
+                      alt="熱門文章4圖片"
+                      class="img-fluid rounded-end-7"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-wrap align-items-center justify-content-between mb-3"
+                  >
+                    <div class="p-4">
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #戶外
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #露營控
+                      </span>
+                      <span
+                        class="text-primary-dark bg-primary-300 py-1 px-2 h6 fw-bold me-3 rounded-1"
+                      >
+                        #凹豆
+                      </span>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="text-secondary fw-bold fs-9 text-decoration-none text-space-1"
+                      >View More
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="col-12 d-block d-md-block d-lg-none">
+            <div #swiperRef="" class="swiper mobileSwiper" data-aos="fade-up">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article
+                    class="card shadow mb-2 border-0"
+                    style="max-width: 324px"
+                  >
+                    <div class="card-body p-3">
+                      <h5
+                        class="card-title h5 fw-black text-start text-secondary"
+                      >
+                        酒精路跑地圖
+                      </h5>
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6"
+                      >
+                        <li>｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                        <li>｜你要的調酒師在這裡！五月全台酒...</li>
+                        <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                      </ul>
+                      <img
+                        src="/2024_hexschool_hw7/assets/hots-1-sm-d41ead80.png"
+                        class="img-fluid d-block d-md-block d-lg-none mb-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <div class="d-flex flex-wrap mb-3">
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #夜貓行程
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #barhopping
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #全台酒吧
+                        </span>
+                      </div>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card shadow mb-2 border-0"
+                    style="max-width: 324px"
+                  >
+                    <div class="card-body p-3">
+                      <h5
+                        class="card-title h5 fw-black text-start text-secondary"
+                      >
+                        台北拉麵圖鑑
+                      </h5>
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6"
+                      >
+                        <li>｜城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                        <li>｜你要的調酒師在這裡！五月全台酒...</li>
+                        <li>｜台南老宅手工酒藏,尋味百年人文釀意</li>
+                      </ul>
+                      <img
+                        src="/2024_hexschool_hw7/assets/hots-3-sm-5ceb5458.png"
+                        class="img-fluid d-block d-md-block d-lg-none mb-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <div class="d-flex flex-wrap mb-3">
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #雞白湯
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #拉麵
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #台北美食
+                        </span>
+                      </div>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card shadow mb-2 border-0"
+                    style="max-width: 324px"
+                  >
+                    <div class="card-body p-3">
+                      <h5
+                        class="card-title h5 fw-black text-start text-secondary"
+                      >
+                        海島自由行
+                      </h5>
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6"
+                      >
+                        <li>｜私島慢活島嶼生活 - 在熱帶天堂品...</li>
+                        <li>｜海島漂流記 - 在陽光、沙灘和比基...</li>
+                        <li>｜島嶼蹤跡 - 揭開加勒比海上世外桃...</li>
+                      </ul>
+                      <img
+                        src="/2024_hexschool_hw7/assets/hots-4-sm-9226d072.png"
+                        class="img-fluid d-block d-md-block d-lg-none mb-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <div class="d-flex flex-wrap mb-3">
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #熱帶國家
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #海邊
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #無敵海景
+                        </span>
+                      </div>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card shadow mb-2 border-0"
+                    style="max-width: 324px"
+                  >
+                    <div class="card-body p-3">
+                      <h5
+                        class="card-title h5 fw-black text-start text-secondary"
+                      >
+                        短天數出國推薦
+                      </h5>
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6"
+                      >
+                        <li>｜72小時東京遊走 - 當個時尚東京通</li>
+                        <li>｜48小時曼谷遊玩全攻略</li>
+                        <li>｜三天兩夜賞櫻微醺東京</li>
+                      </ul>
+                      <img
+                        src="/2024_hexschool_hw7/assets/hots-5-sm-42a757ac.png"
+                        class="img-fluid d-block d-md-block d-lg-none mb-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <div class="d-flex flex-wrap mb-3">
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #說走就走
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #出國玩
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #東亞
+                        </span>
+                      </div>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article
+                    class="card shadow mb-2 border-0"
+                    style="max-width: 324px"
+                  >
+                    <div class="card-body p-3">
+                      <h5
+                        class="card-title h5 fw-black text-start text-secondary"
+                      >
+                        週末露營趣
+                      </h5>
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-bold fs-6"
+                      >
+                        <li>｜週末說走就走露營記</li>
+                        <li>｜城市野營日記</li>
+                        <li>｜和寵物去露營 - 大自然之旅的雙倍...</li>
+                      </ul>
+                      <img
+                        src="/2024_hexschool_hw7/assets/hots-2-sm-e66a826f.png"
+                        class="img-fluid d-block d-md-block d-lg-none mb-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <div class="d-flex flex-wrap mb-3">
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #戶外
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #露營控
+                        </span>
+                        <span
+                          class="text-primary-dark bg-primary-300 py-1 px-2 fs-7 fw-bold me-11"
+                        >
+                          #凹豆
+                        </span>
+                      </div>
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--熱門文章-->
+    <!--品味生活-->
+    <div class="py-10">
+      <section class="container">
+        <div
+          class="d-flex flex-wrap justify-content-start justify-content-md-between align-items-md-center mb-4"
+        >
+          <h2 class="h2 fw-black text-space-1" data-aos="fade-down">品味生活</h2>
+          <div
+            class="line-life position-relative justify-content-md-between justify-content-lg-between d-none d-md-block d-lg-block"
+            data-aos="zoom-out-down"
+            >
+            <button class="prepage-life btn btn-outline-gray me-5 py-1 fs-4">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button class="nextpage-life btn btn-outline-gray ms-5 py-1 fs-4">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <section class="col-12">
+            <div #swiperRef="" class="swiper lifeSwiper" data-aos="zoom-out-left">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="card mb-2 border-0" style="max-width: 416px">
+                    <div class="card-body p-3 text-center">
+                      <div class="card-title text-start mb-9">
+                        <h8 class="fs-8 text-space-1 text-primary-dark fw-black"
+                          >食.</h8
+                        >
+                      </div>
+  
+                      <img
+                        src="/2024_hexschool_hw7/assets/life-1-dc3e4076.png"
+                        class="img-fluid mb-9 pt-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-black fs-5 pt-3 mb-9"
+                      >
+                        <li class="mb-9">｜米其林三星主廚的那些絕活傳奇</li>
+                        <li class="mb-9">｜探秘成都的地道川味秘技與魅力</li>
+                        <li>｜義大利釀酒師對於酒的堅持執著</li>
+                      </ul>
+  
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1 pt-3"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card mb-2 border-0" style="max-width: 416px">
+                    <div class="card-body p-3 text-center">
+                      <div class="card-title text-start mb-9">
+                        <h8 class="fs-8 text-space-1 text-primary-dark fw-black"
+                          >藝.</h8
+                        >
+                      </div>
+  
+                      <img
+                        src="/2024_hexschool_hw7/assets/life-2-e0514e49.png"
+                        class="img-fluid mb-9 pt-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-black fs-5 pt-3 mb-9"
+                      >
+                        <li class="mb-9">｜米其林三星主廚的那些絕活傳奇</li>
+                        <li class="mb-9">｜探秘成都的地道川味秘技與魅力</li>
+                        <li>｜義大利釀酒師對於酒的堅持執著</li>
+                      </ul>
+  
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1 pt-3"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="card mb-2 border-0" style="max-width: 416px">
+                    <div class="card-body p-3 text-center">
+                      <div class="card-title text-start mb-9">
+                        <h8 class="fs-8 text-space-1 text-primary-dark fw-black"
+                          >食.</h8
+                        >
+                      </div>
+  
+                      <img
+                        src="/2024_hexschool_hw7/assets/life-1-dc3e4076.png"
+                        class="img-fluid mb-9 pt-3"
+                        alt="文章手機板圖片1"
+                      />
+                      <ul
+                        class="card-text text-gray-dark list-unstyled text-start fw-black fs-5 pt-3 mb-9"
+                      >
+                        <li class="mb-9">｜米其林三星主廚的那些絕活傳奇</li>
+                        <li class="mb-9">｜探秘成都的地道川味秘技與魅力</li>
+                        <li>｜義大利釀酒師對於酒的堅持執著</li>
+                      </ul>
+  
+                      <a
+                        href="#"
+                        class="text-secondary fw-bold fs-6 text-decoration-none text-space-1 pt-3"
+                        >View More
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--品味生活-->
+    <!--提案區塊-->
+    <div class="py-10 bg-primary">
+      <section class="container">
+        <div class="row">
+          <section class="col-12 col-md-12 col-lg-6 align-self-center">
+            <h5 class="h5 text-gray fw-black mb-3" data-aos="fade-down">
+              今天又不知道要去哪裡了嗎？
+            </h5>
+            <h2 class="h2 fw-black text-space-1 mb-9" data-aos="fade-down">
+              Vivre 給你意想不到的生活風格提案
+            </h2>
+            <button type="button"
+                class="btn btn-accent d-block text-space-1 fs-5 pt-3"
+                data-aos="flip-up"
+              >
+                馬上訂閱
+                <i class="bi bi-arrow-right"></i>
+              </button>
+          </section>
+          <section class="col-3 d-none d-md-none d-lg-block align-self-end pt-10" data-aos="fade-down">
+
+            <article class="card mb-7">
+              <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                           badge bg-white text-accent-dark border border-accent-light rounded-0">
+                <i class="bi bi-play-fill"></i>
+                人氣行程
+              </span>
+              <img src="/2024_hexschool_hw7/assets/projects-2-28f2afc5.png" class="card-img img-fluid" alt="專案圖1">
+              <div class="card-img-overlay text-white">
+                <div class="position-absolute bottom-0 start-0 p-2">
+                  <h6 class="card-title fw-bold text-space-1 h6">親子露營要帶什麼？</h6>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-2">
+                  <a href="#" class="card-link fs-4">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card mb-7">
+              <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                           badge bg-white text-accent-dark border border-accent-light rounded-0">
+                <i class="bi bi-play-fill"></i>
+                編輯推薦
+              </span>
+              <img src="/2024_hexschool_hw7/assets/projects-5-2bf95022.png" class="card-img img-fluid" alt="專案圖1">
+              <div class="card-img-overlay text-white">
+                <div class="position-absolute bottom-0 start-0 p-2">
+                  <h6 class="card-title fw-bold text-space-1 h6">質感房間改造攻略！</h6>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-2">
+                  <a href="#" class="card-link fs-4">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </section>
+          <section class="col-3 d-none d-md-none d-lg-block align-self-start" data-aos="fade-up">
+            <article class="card mb-7">
+              <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                           badge bg-white text-accent-dark border border-accent-light rounded-0">
+                <i class="bi bi-play-fill"></i>
+                編輯推薦
+              </span>
+              <img src="/2024_hexschool_hw7/assets/projects-1-1192f106.png" class="card-img img-fluid" alt="專案圖1">
+              <div class="card-img-overlay text-white">
+                <div class="position-absolute bottom-0 start-0 p-2">
+                  <h6 class="card-title fw-bold text-space-1 h6">山女孩的健行筆記</h6>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-2">
+                  <a href="#" class="card-link fs-4">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card mb-7">
+              <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                           badge bg-white text-accent-dark border border-accent-light rounded-0">
+                <i class="bi bi-play-fill"></i>
+                熱門文章
+              </span>
+              <img src="/2024_hexschool_hw7/assets/projects-3-6cd4e17c.png" class="card-img img-fluid" alt="專案圖1">
+              <div class="card-img-overlay text-white">
+                <div class="position-absolute bottom-0 start-0 p-2">
+                  <h6 class="card-title fw-bold text-space-1 h6">適合溜小孩的海邊景點推薦</h6>
+                </div>
+                <div class="position-absolute bottom-0 end-0 p-2">
+                  <a href="#" class="card-link fs-4">
+                      <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section class="col-12 d-block d-md-block d-lg-none">
+            <div #swiperRef="" class="swiper projectSwiper" data-aos="fade-left">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide bg-primary">
+                  <article class="card mt-3">
+                    <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                                 badge bg-white text-accent-dark border border-accent-light rounded-0">
+                      <i class="bi bi-play-fill"></i>
+                      人氣行程
+                    </span>
+                    <img src="/2024_hexschool_hw7/assets/projects-2-28f2afc5.png" class="card-img img-fluid" alt="專案圖1">
+                    <div class="card-img-overlay text-white">
+                      <div class="position-absolute bottom-0 start-0 p-2">
+                        <h6 class="card-title fw-bold text-space-1 h6">親子露營要帶什麼？</h6>
+                      </div>
+                      <div class="position-absolute bottom-0 end-0 p-2">
+                        <a href="#" class="card-link fs-4">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide bg-primary">
+                  <article class="card mt-3">
+                    <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                                 badge bg-white text-accent-dark border border-accent-light rounded-0">
+                      <i class="bi bi-play-fill"></i>
+                      編輯推薦
+                    </span>
+                    <img src="/2024_hexschool_hw7/assets/projects-5-2bf95022.png" class="card-img img-fluid" alt="專案圖1">
+                    <div class="card-img-overlay text-white">
+                      <div class="position-absolute bottom-0 start-0 p-2">
+                        <h6 class="card-title fw-bold text-space-1 h6">質感房間改造攻略！</h6>
+                      </div>
+                      <div class="position-absolute bottom-0 end-0 p-2">
+                        <a href="#" class="card-link fs-4">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide bg-primary">
+                  <article class="card mt-3">
+                    <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                                 badge bg-white text-accent-dark border border-accent-light rounded-0">
+                      <i class="bi bi-play-fill"></i>
+                      編輯推薦
+                    </span>
+                    <img src="/2024_hexschool_hw7/assets/projects-1-1192f106.png" class="card-img img-fluid" alt="專案圖1">
+                    <div class="card-img-overlay text-white">
+                      <div class="position-absolute bottom-0 start-0 p-2">
+                        <h6 class="card-title fw-bold text-space-1 h6">山女孩的健行筆記</h6>
+                      </div>
+                      <div class="position-absolute bottom-0 end-0 p-2">
+                        <a href="#" class="card-link fs-4">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide bg-primary">
+                  <article class="card mt-3">
+                    <span class="position-absolute position-absolute top-0 start-20 translate-middle 
+                                 badge bg-white text-accent-dark border border-accent-light rounded-0">
+                      <i class="bi bi-play-fill"></i>
+                      熱門文章
+                    </span>
+                    <img src="/2024_hexschool_hw7/assets/projects-3-6cd4e17c.png" class="card-img img-fluid" alt="專案圖1">
+                    <div class="card-img-overlay text-white">
+                      <div class="position-absolute bottom-0 start-0 p-2">
+                        <h6 class="card-title fw-bold text-space-1 h6">適合溜小孩的海邊景點推薦</h6>
+                      </div>
+                      <div class="position-absolute bottom-0 end-0 p-2">
+                        <a href="#" class="card-link fs-4">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+    <!--提案區塊-->
+    <!--聯絡我們-->
+      <div class="py-10">
+        <section class="container">
+          <div class="row justify-content-center justify-content-md-between justify-content-lg-between">
+            <div class="col-12 col-md-4 col-lg-4">
+              <h2 class="h2 fw-black text-space-1 text-center text-md-start text-lg-start" 
+                  data-aos="zoom-out-left">
+                想看什麼主題由你決定！
+              </h2>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3">
+              <h4 class="h4 mb-9 text-primary-dark fw-bold text-space-1 text-center text-md-end text-lg-end"
+                  data-aos="zoom-out-right">
+                歡迎投稿與我們分享
+              </h4>
+              <button type="button"
+              class="btn btn-accent d-block text-space-1 fs-9 py-3 px-4 mx-auto me-md-0 me-lg-0 ms-md-auto ms-lg-auto"
+              data-aos="zoom-out-right"
+              >
+            聯絡我們
+            </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    <!--聯絡我們-->
+    <footer class="footer">
+    <div class="container">
+        <p class="text-center fz-6 py-4 border-top">
+            ©Vivre 2024 All right Reserved
+        </p>
+    </div>
+</footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
+  </body>
+</html>
