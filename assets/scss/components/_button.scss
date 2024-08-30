@@ -1,0 +1,16 @@
+.btn-outline-accent{
+    color: $secondary;
+    
+    &:hover{
+        background-color: $accent-300;
+    }
+}
+
+.btn-accent{
+    background-color: $secondary;
+    color: $white;
+    &:hover{
+        background-color: $accent-300;
+        color: $white;
+    }
+}

@@ -1,0 +1,23 @@
+/* 引入字體 */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Serif+TC:wght@200..900&display=swap');
+@import "bootstrap/scss/functions";
+@import './utils/variables';
+@import "bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.min.css";
+@import './components/swiper';
+@import "./utils/base";
+
+// 1. 元件，全部頁面都會用到
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './components/button';
+
+
+// 2. 雜項(進階，第六週)
+@import './utils/text';
+
+// 3. 共同樣式
+
+// 4. 分頁樣式
+@import './pages/index.scss';
+@import './pages/content';
